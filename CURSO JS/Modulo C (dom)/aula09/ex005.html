@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+        body{
+            background-color: #4e4e4e;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>resultado</p>
+    <div id="msg">clique aqui</div>
+    <p><strong>paragrafo</strong></p>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color = 'aliceblue'
+        var msg = document.querySelector('div#msg')
+        msg.style.background = '#838383'
+        msg.style.display = 'inline'
+        msg.innerText = 'ola'
+
+    </script>
+</body>
+</html>
